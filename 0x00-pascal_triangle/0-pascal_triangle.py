@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ pascal triangle"""
+
+
 def pascal_triangle(n):
     if n <= 0:
         return []
@@ -21,13 +23,14 @@ def pascal_triangle(n):
 
     return triangle
 
-# Example usage and printing the triangle
+
 def print_triangle(triangle):
     """
     Print the triangle
     """
     for row in triangle:
         print("[{}]".format(",".join([str(x) for x in row])))
+
 
 if __name__ == "__main__":
     # Test the pascal_triangle function with n = 5
